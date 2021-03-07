@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    /* position: absolute;
+    z-index: 0; */
+}
+
+.navbar-inner {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.name-title {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+
+/* =================== */
+
+.content {
+    padding: 60px 0 25px;
+}
+
+.content-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+}
+
+.seen-more {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.btn-seenmore {
+    font-weight: 600 !important;
+    border: none;
+    box-shadow: inset 0 0 1px 1px #6c757d;
+    color: #6c757d;
+}
+
+.btn-seenmore:hover {
+    background-color: #0cafef !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+a.view-all {
+    padding: 0.8rem 5rem !important;
+}
+
+.content-body {}
+
+.edit_card {
+    padding: 10px;
+    text-align: center;
+    max-width: 380px;
+    margin: auto;
+}
+
+.cover {
+    height: 220px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.edit_img {
+    transition: all 0.2s linear;
+}
+
+.edit_img:hover {
+    transform: scale(1.1);
+}
+
+.distance {
+    top: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px 0 0 15px;
+    right: 0;
+    font-size: 13px;
+    position: absolute;
+    color: #fff;
+}
+
+.distance ::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f124";
+    display: inline;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.card_body {
+    border-top: 2px solid #f47920;
+}
+
+.hide_paragraph {
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    font-size: 12px;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hide_paragraph a {
+    color: black;
+}
+
+.hide_paragraph a:hover {
+    color: #007bff;
+}
+
+.title_card {
+    font-size: 15px;
+    font-weight: bold;
+    height: 5vh;
+}
+
+.title_card a {
+    color: black;
+}
+
+.title_card a:hover {
+    color: #007bff;
+}
+
+.list {
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    display: inline-block;
+    background-color: #f47920;
+    position: absolute;
+    font-weight: 700;
+    left: 51%;
+    top: 0;
+    transform: translate(-50%, -53%);
+    color: #f8f9fa;
+}
+
+.pointy {
+    padding: 3px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.pointy:before {
+    right: 99%;
+    border-right: 10px solid #f47920;
+}
+
+.pointy:after,
+.pointy:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.pointy:after {
+    left: 99%;
+    border-left: 10px solid #f47920;
+}
+
+.pointy:after,
+.pointy:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.card {
+    width: 90% !important;
+    margin: auto !important;
+    margin-top: -1rem !important;
+    box-shadow: 0px 5px 9px 1px rgba(163, 163, 163, 0.58);
+}
+
+
+/* ============================= */
+
+article.tile-card:not([class*=stretch]):hover {
+    opacity: 1!important;
+    box-shadow: 0 0 0 rgb(45 45 45 / 5%), 0 1px 1px rgb(49 49 49 / 5%), 0 2px 2px rgb(42 42 42 / 5%), 0 4px 4px rgb(32 32 32 / 5%), 0 8px 8px rgb(49 49 49 / 5%), 0 16px 16px rgb(35 35 35 / 10%);
+}
+
+article.tile-card:not([class*=stretch]) {
+    position: relative;
+    /* transition: opacity .2s ease-out; */
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 5%);
+    margin-bottom: 1.5rem;
+    opacity: .9;
+}
+
+article.tile-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+article.tile-card .cover1 {
+    height: 240px;
+    position: relative;
+    text-align: center;
+}
+
+article.tile-card a {
+    color: #343a40;
+}
+
+article.tile-card header.overlay {
+    background-color: transparent;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6), rgba(0, 0, 0, .5), rgba(0, 0, 0, .4), rgba(0, 0, 0, .3), transparent);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+article.tile-card header {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    color: #333;
+    padding: 20px 10px 10px;
+}
+
+article.tile-card header.overlay h5 {
+    margin: 0;
+}
+
+article.tile-card header.overlay a {
+    color: #fff!important;
+}
+
+article.tile-card a:hover {
+    color: #29a1d4;
+}
+
+article.tile-card header .pro-address {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 25px;
+}
+
+article.tile-card h6 {
+    line-height: 1.6;
+}
+
+article.tile-card .cover1 img {
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+
+
+/* ============footer======= */
+
+.bgr-footer {
+    background: #0f2027;
+    color: white;
+    padding: 32px 20px 0 20px;
+    font-size: 15px;
+}
+
+.footer1 div p {
+    margin: 1px;
+}
+
+.footer2 div p {
+    margin: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list_footer a {
+    color: white;
+}
+
+.list_footer>a:hover {
+    color: white;
+    padding-left: 5px;
+    transition: all 0.1s linear;
+}
+
+.list_footer {
+    display: grid;
+}
+
+.info_footer {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.info_footer:hover {
+    color: rgb(197, 150, 49);
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+}
