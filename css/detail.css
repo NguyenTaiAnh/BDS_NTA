@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    /* position: absolute;
+    z-index: 0; */
+}
+
+.navbar-inner {
+    /* position: absolute; */
+    width: 100%;
+    /* z-index: 2; */
+    font-size: 17px;
+    border-bottom: 1px solid white;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.name-title {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+
+/* =================== */
+
+
+/* ==========Body============ */
+
+
+/* slick slider */
+
+.main {
+    font-family: Arial;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.action {
+    display: block;
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.action a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f30;
+    color: #fff;
+    text-decoration: none;
+}
+
+.action a:hover {
+    background: #000;
+}
+
+.main {
+    background: #ccc;
+}
+
+
+/* slick slider end */
+
+
+/* ============footer======= */
+
+.bgr-footer {
+    background: #0f2027;
+    color: white;
+    padding: 32px 20px 0 20px;
+    font-size: 15px;
+}
+
+.footer1 div p {
+    margin: 1px;
+}
+
+.footer2 div p {
+    margin: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list_footer a {
+    color: white;
+}
+
+.list_footer>a:hover {
+    color: white;
+    padding-left: 5px;
+    transition: all 0.1s linear;
+}
+
+.list_footer {
+    display: grid;
+}
+
+.info_footer {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.info_footer:hover {
+    color: rgb(197, 150, 49);
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+}
